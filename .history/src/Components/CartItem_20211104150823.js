@@ -9,9 +9,9 @@ const CartItem = ({ item }) => {
   const deleteCart = () => {
     dispatch(removeFromCart(item.id));
     swal({
-      title: "Bạn đã xóa sản phẩm thành công!",
+      title: "Bạn đã thêm vào thành công!",
       text: "Cảm ơn bạn đã ghé thăm mua sản phẩm",
-      icon: "info",
+      icon: "danger",
     });
   };
   const onChangeHandler = (e) => {

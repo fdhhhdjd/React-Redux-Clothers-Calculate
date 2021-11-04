@@ -11,7 +11,7 @@ const CartItem = ({ item }) => {
     swal({
       title: "Bạn đã xóa sản phẩm thành công!",
       text: "Cảm ơn bạn đã ghé thăm mua sản phẩm",
-      icon: "info",
+      icon: "danger",
     });
   };
   const onChangeHandler = (e) => {
