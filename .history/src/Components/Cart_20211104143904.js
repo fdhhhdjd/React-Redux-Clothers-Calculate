@@ -13,8 +13,8 @@ const Cart = () => {
       items += item.qty;
       price += item.qty * item.price;
     });
-    setTotalItems(items);
-    setTotalPrice(price.toFixed(2));
+    setTotalItems(Math.round(items));
+    setTotalPrice(price);
   }, [totalPrice, setTotalPrice, totalItems, setTotalItems, carts]);
   return (
     <>

@@ -14,7 +14,7 @@ const ProductItem = () => {
       icon: "success",
     });
   };
-
+  const deleteCart = () => {};
   return (
     <>
       <div className="ui grid container">
@@ -37,9 +37,9 @@ const ProductItem = () => {
                   tabIndex="0"
                   onClick={addCart}
                 >
-                  <div className="hidden content">
+                  {/* <div className="hidden content">
                     <i className="shop icon"></i>
-                  </div>
+                  </div> */}
                   <div className="visible content">Add to Cart</div>
                 </div>
               </div>

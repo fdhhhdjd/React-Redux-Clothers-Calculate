@@ -58,9 +58,7 @@ const BasketReducer = (state = initialState, action) => {
       return {
         ...state,
         carts: state.carts.map((item) =>
-          item.id === action.payload.id
-            ? { ...item, qty: +action.payload.qty }
-            : item
+          item.id === payload.id ? { ...item, qty: +payload + qty } : item
         ),
       };
     default:

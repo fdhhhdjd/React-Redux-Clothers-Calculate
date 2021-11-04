@@ -52,16 +52,6 @@ const BasketReducer = (state = initialState, action) => {
     case types.REMOVE_FROM_CART:
       return {
         ...state,
-        carts: state.carts.filter((item) => item.id !== payload.id),
-      };
-    case types.ADJUST_ITEM_QTY:
-      return {
-        ...state,
-        carts: state.carts.map((item) =>
-          item.id === action.payload.id
-            ? { ...item, qty: +action.payload.qty }
-            : item
-        ),
       };
     default:
       return state;

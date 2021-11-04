@@ -45,7 +45,7 @@ export const adjustItemQty = (itemID, qty) => {
     },
   };
 };
-export const setProduct = (products) => {
+export const setProducts = (products) => {
   return {
     type: types.SET_PRODUCTS,
     payload: products,

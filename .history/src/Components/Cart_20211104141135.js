@@ -6,16 +6,7 @@ const Cart = () => {
   const { carts } = useSelector((state) => state.data);
   const [totalItems, setTotalItems] = useState(0);
   const [totalPrice, setTotalPrice] = useState(0);
-  useEffect(() => {
-    let items = 0;
-    let price = 0;
-    carts.forEach((item) => {
-      items += item.qty;
-      price += item.qty * item.price;
-    });
-    setTotalItems(items);
-    setTotalPrice(price.toFixed(2));
-  }, [totalPrice, setTotalPrice, totalItems, setTotalItems, carts]);
+  useEffect(() => {}, [totalPrice, setTotalPrice, totalItems, setTotalItems]);
   return (
     <>
       <div className="cart">

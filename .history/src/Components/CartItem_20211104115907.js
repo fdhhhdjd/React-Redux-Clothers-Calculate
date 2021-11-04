@@ -1,16 +1,9 @@
-import React, { useState } from "react";
-import { useDispatch } from "react-redux";
-import { adjustItemQty, removeFromCart } from "../Redux/Actions";
+import React from "react";
+import { removeFromCart } from "../Redux/Actions";
 import "../Styles/Cart.css";
 const CartItem = ({ item }) => {
-  const [input, setInput] = useState(item.qty);
-  const dispatch = useDispatch();
   const deleteCart = () => {
     dispatch(removeFromCart(item.id));
-  };
-  const onChangeHandler = (e) => {
-    setInput(e.target.value);
-    dispatch(adjustItemQty(item.id, e.target.value));
   };
   return (
     <>
@@ -29,13 +22,13 @@ const CartItem = ({ item }) => {
               type="number"
               id="qty"
               name="qty"
-              value={input}
-              onChange={onChangeHandler}
+              //   value={input}
+              //   onChange={onChangeHandler}
             />
           </div>
           <button className="actions__deleteItemBtn" onClick={deleteCart}>
             <img
-              src="https://img.icons8.com/ios-glyphs/30/000000/filled-trash.png"
+              src="https://image.flaticon.com/icons/svg/709/709519.svg"
               alt=""
             />
           </button>

@@ -36,21 +36,6 @@ export const removeFromCart = (itemID) => {
   };
 };
 
-export const adjustItemQty = (itemID, qty) => {
-  return {
-    type: types.ADJUST_ITEM_QTY,
-    payload: {
-      id: itemID,
-      qty,
-    },
-  };
-};
-export const setProduct = (products) => {
-  return {
-    type: types.SET_PRODUCTS,
-    payload: products,
-  };
-};
 export const setProducts = () => {
   return function (dispatch) {
     dispatch(FetchAllStart());

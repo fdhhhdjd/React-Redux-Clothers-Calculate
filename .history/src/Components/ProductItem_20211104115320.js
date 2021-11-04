@@ -14,7 +14,7 @@ const ProductItem = () => {
       icon: "success",
     });
   };
-
+  const deleteCart = () => {};
   return (
     <>
       <div className="ui grid container">

@@ -14,8 +14,8 @@ const Cart = () => {
       price += item.qty * item.price;
     });
     setTotalItems(items);
-    setTotalPrice(price.toFixed(2));
-  }, [totalPrice, setTotalPrice, totalItems, setTotalItems, carts]);
+    setTotalPrice(price);
+  }, [totalPrice, setTotalPrice, totalItems, setTotalItems]);
   return (
     <>
       <div className="cart">

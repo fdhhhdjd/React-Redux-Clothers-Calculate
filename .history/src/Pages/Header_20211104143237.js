@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import "../Styles/Header.css";
@@ -27,7 +27,7 @@ const Header = () => {
               src="https://image.flaticon.com/icons/svg/102/102276.svg"
               alt="shopping cart"
             />
-            <div className="cart__counter">{cartCount}</div>
+            <div className="cart__counter">10</div>
           </div>
         </Link>
       </div>
